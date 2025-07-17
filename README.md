@@ -1,1 +1,0 @@
-# nalesnik.github.io
