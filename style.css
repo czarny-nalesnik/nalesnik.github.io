@@ -1,0 +1,106 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* */
+/* NAV BAR*/
+/* */
+
+nav
+{
+    width: 70%;
+    height: 9rem;
+    background-color: #FFE8CD;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 30px -5px;
+}
+
+nav div.logo
+{
+    display: inline-block;
+    padding: 0 3rem;
+}
+
+nav>ul
+{
+    list-style: none;
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+nav>ul>li
+{
+    display: inline-block;
+    position: relative;
+}
+
+.menu-anchor
+{
+    padding: 1rem;
+    background-color: #FFD6BA;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px -8px #000000;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+}
+
+nav>ul>li:hover .nav-submenu
+{
+    display: block;
+}
+
+/* */
+/* SUB MENU */
+/* */
+
+.nav-submenu
+{
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    width: 100%;
+    display: none;
+}
+
+.nav-submenu>li
+{
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* */
+/* UTILITY*/
+/* */
+
+.split
+{
+    width: 70%;
+    height: 1rem;
+}
+
+/* */
+/* MAIN BODY OF PAGE*/
+/* */
+
+main
+{
+    width: 70%;
+    background-color: red;
+}

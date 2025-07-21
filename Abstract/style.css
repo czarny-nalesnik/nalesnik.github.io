@@ -1,0 +1,286 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+input, button, h1, a { all: unset}
+
+/* HEADER section now */
+/* HEADER section now */
+/* HEADER section now */
+/* HEADER section now */
+/* HEADER section now */
+
+#header
+{
+    background-color: black;
+    color: white;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+#topbar-logo-wrapper
+{
+    display: flex;
+    margin-left: 7%;
+}
+
+#topbar-logo-wrapper h2
+{
+    margin: 0 0.5rem;
+}
+
+#topbar-logo-logo
+{
+    display: flex;
+    align-items: center;
+    padding: 0.1rem 1rem;
+    transition: opacity 0.3s ease;
+}
+
+#topbar-logo-logo:hover
+{
+    opacity: 0.7;
+}
+
+#logo-link
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#topbar-logo-helpcenter
+{
+    display: flex;
+    border-left: 2px solid;
+    align-items: center;
+    padding: 0.1rem 1rem;
+}
+
+
+/* TOP section now */
+/* TOP section now */
+/* TOP section now */
+/* TOP section now */
+/* TOP section now */
+
+
+#top
+{
+    background-color:#dadbf1;
+    width: 100%;
+    height: 23rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+#top h1
+{
+    display: inline-block;
+    font-size: 5rem;
+    margin: 7rem 0 1.5rem 0;
+}
+
+#input-site-search
+{
+    font-size: 1.5rem;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 0.5rem;
+    text-align: left;
+    width: 40%;
+    max-width: 50rem;
+    height: 4rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 0 2rem 0 1.5rem;
+}
+
+
+#input-site-search:focus
+{
+    border-color: #0077cc;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+#input-site-search::placeholder
+{
+    font-size: 1.5rem;
+}
+
+/* middle section now */
+/* middle section now */
+/* middle section now */
+/* middle section now */
+
+#middle
+{
+    height: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    justify-content: center;
+    row-gap: 8rem;
+    column-gap: 6rem;
+    margin-bottom: 7rem;
+}
+
+.middle-container-item
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: auto;
+    min-width: 16rem;
+    max-width: 25rem;
+    justify-content: space-evenly;
+    scale: 1.1;
+    margin: 0 auto;
+}
+
+.item-description
+{
+    padding-left: 1.3rem;
+    text-overflow: clip;
+}
+
+.item-description h3
+{
+    margin-bottom: 1.3rem;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.item-description p
+{
+    margin-bottom: 1.4rem;
+    font-size: 1.3rem;
+}
+
+.item-description a,
+.item-description a:visited,
+.item-description a:link
+{
+    font-size: 1.2rem;
+    color: #4C5FD5;
+}
+
+@media (max-width: 50rem) {
+  #middle {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* FOOTER section now */
+/* FOOTER section now */
+/* FOOTER section now */
+/* FOOTER section now */
+/* FOOTER section now */
+
+#footer
+{
+    background-color: black;
+    color: white;
+    height: 29rem;
+    padding: 3rem 8rem;
+}
+
+.footer-left-side
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 85%;
+    float: left;
+}
+
+.footer-container-item>h3
+{
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+.footer-container-item>h4
+{
+    margin-top: 2rem;
+    margin-bottom: 0.3rem;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+ul.footer-links
+{
+    list-style: none;
+}
+
+ul.footer-links>li
+{
+    margin-bottom: 0.4rem;
+}
+
+/* stylizowanie linków */
+/* stylizowanie linków */
+
+a.footer-links:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* */ /* */ /* */ /* */
+/* */ /* */ /* */ /* */
+
+#footer
+{
+    position: relative;
+}
+
+.footer-legal
+{
+    position: absolute;
+    bottom: 5rem;
+    right: 7%;
+}
+
+.footer-legal>h3>img
+{
+    margin-bottom: 0.8rem;
+}
+
+.footer-legal>p
+{
+    font-size: 1.3rem;
+}
+
+
+/* */ /* */ /* */ /* */
+/* fixed help button */
+/* */ /* */ /* */ /* */
+
+#fixed-button-help
+{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: #4C5FD5;
+    color: white;
+    font-weight: bolder;
+    padding: 0.5rem 1.2rem;
+    border-radius: 3rem;
+}
+
+#fixed-button-help>img
+{
+    margin-right: 0.4rem;
+}
